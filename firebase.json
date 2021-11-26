@@ -1,0 +1,22 @@
+{
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "projects": {
+    "default": "ng-recipe-book-af772"
+  },
+  "hosting": {
+    "public": "dist/ng-complete-guide-update",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
