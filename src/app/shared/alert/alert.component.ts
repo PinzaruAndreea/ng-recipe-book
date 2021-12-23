@@ -5,16 +5,11 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   templateUrl: './alert.component.html',
   styleUrls: ['./alert.component.css']
 })
-export class AlertComponent implements OnInit {
+export class AlertComponent {
   @Input() message: string;
   @Output() close = new EventEmitter<void>();
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   onClose() {
     this.close.emit();
   }
-
 }
